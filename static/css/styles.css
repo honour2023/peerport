@@ -1,0 +1,21 @@
+.header-image {
+    /*background: url("../img/suitcase.jpg") cover center center;*/
+    background-image: url("../img/suitcase.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+.gratific{
+    min-height: 700px;
+}
+h1, h2, h3, h4, h5, h6, .title{
+    font-family: 'Raleway', sans-serif;
+}
+
+p, div, span, a, section {
+    font-family: 'Roboto Slab', serif;
+}
+
+.raleway{
+    font-family: 'Raleway', sans-serif;
+}

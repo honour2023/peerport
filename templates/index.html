@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PeerPort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/bulma.css">
+    <link rel="stylesheet" href="static/css/w3.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+<nav class="w3-padding-large navbar w3-top">
+        <div class="navbar-brand">
+                <a class="navbar-item raleway w3-xlarge" href="#">
+                    PeerPort
+                </a>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#">
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control ">
+                            <a class="button w3-bottombar w3-border-0 w3-text-blue" href="#Signup">
+                                <span>Sign Up</span>
+                            </a>
+                        </p>
+                        <p class="control">
+                            <a class="button w3-border-0 w3-text-blue" href="#CONTACT">
+                                <span>Contact</span>
+                            </a>
+                        </p>
+                        <p class="control">
+                            <a class="button w3-border-0 w3-text-blue" href="#">
+                                <span>About</span>
+                            </a>
+                        </p>
+                        <p class="control">
+                            <a class="button is-info w3-border-0 w3-text-black" href="#items">
+                                <span>See Items</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<header class="hero is-medium header-image">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="w3-xxxlarge w3-text-white">
+                Earn Money with your extra baggage space
+            </h1>
+        </div>
+    </div>
+</header>
+<div class="w3-blue">
+    <div class="container w3-padding-32">
+        <br>
+        <div class="columns w3-padding">
+            <div class="column is-half w3-padding-16">
+                <h1 class="title w3-center">What is PeerPort?</h1>
+                <p>With PeerPort, you can monetize your next trip.</p>
+                <br>
+                <p>Shoppers in Ghana and Nigeria have difficulty buying items from Amazon.com and other stores
+                    in the US and Europe due to high shipping costs.</p>
+                <br>
+                <p>Travelling soon? Why not help someone bring some items
+                    while you make some money doing so?</p>
+            </div>
+            <div class="column is-half w3-padding-16" id="Signup">
+                <h1 class="title">Sign up to be a Jetter</h1>
+                <form action="/" method="post">
+                    <div class="field">
+                        <label class="label w3-text-white"> Your name</label>
+                        <p class="control has-icons-left has-icons-right">
+                            <input class="input" type="text" name="name" placeholder="e.g Kwaku Obinna">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <label class="label w3-text-white"> Email address</label>
+                        <p class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" name="email" placeholder="kwakuo@gmail.com">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <label class="label w3-text-white"> Your number</label>
+                        <p class="control has-icons-left has-icons-right">
+                            <input class="input" type="text" name="phone_num" placeholder="e.g +233 6899...">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <label class="label w3-text-white">Be a member of our community </label>
+                        <p class="control has-icons-left has-icon-right">
+                        <select type="radio" id="status" class="form-control" name="member" required>
+                                    <option>Please select an option</option>
+                                    <option> Traveller</option>
+                                    <option> Shopper</option>
+                                </select>
+                        </p>
+                    </div>
+                    <div class="field is-grouped is-grouped-right">
+                        <p class="control">
+                            <button class="button is-white" type="submit">
+                                Submit
+                            </button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--How It Works-->
+<section>
+    <div class="w3-container container w3-padding-32">
+        <h1 class="w3-center w3-padding-16">How It Works</h1>
+        <div class="columns is-multiline">
+            <div class="column is-4">
+                <div class="columns is-multiline">
+                    <div class="column is-half">
+                        <img class="image is-3by2 w3-padding" src="static/img/008-box-6.png" alt="">
+                    </div>
+                    <div class="column is-half">
+                        Jetter searches for available gigs.
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="columns is-multiline">
+                    <div class="column is-half">
+                        <img class="image is-3by2 w3-padding" src="static/img/037-handshaoke.png" alt="">
+                    </div>
+                    <div class="column is-half">
+                        Jetter &amp; Shopper negotiate &amp; agree on the delivery fee.
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="columns is-multiline">
+                    <div class="column is-half">
+                        <img class="image is-3by2 w3-padding" src="static/img/030-credlit-card.png" alt="">
+                    </div>
+                    <div class="column is-half">
+                        Shopper's payment for item(s) &amp; delivery are held in escrow
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="columns is-multiline">
+                    <div class="column is-half">
+                        <img class="image is-3by2 w3-padding" src="static/img/018-online-shop.png" alt="">
+                    </div>
+                    <div class="column is-half">
+                        Jetter pays for item with their own fun.
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="columns is-multiline">
+                    <div class="column is-half">
+                        <img class="image is-3by2 w3-padding" src="static/img/017-box-2.png" alt="">
+                    </div>
+                    <div class="column is-half">
+                        Jetter arrives at rendezvous point and delivers item(s)
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="columns is-multiline">
+                    <div class="column is-half">
+                        <img class="image is-3by2 w3-padding" src="static/img/00f9-price.png" alt="">
+                    </div>
+                    <div class="column is-half">
+                        Full item amount &amp; delivery fee are released to Jetter.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Why Become a Jetter-->
+<section class="w3-blue">
+    <div class="w3-container container w3-padding-32">
+        <h1 class="w3-center w3-padding-16">Why Become a Jetter?</h1>
+        <div class="columns is-multiline w3-margin w3-center">
+            <div class="column is-3">
+                <div class="card-image">
+                    <figure class="image is-2by2">
+                        <img src="static/img/098-happhy-2.png" alt="">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        Great Opportunity to make spare cash.
+                    </div>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="card-image">
+                    <figure class="image is-2by2">
+                        <img src="static/img/038-joy.png" alt="">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        The chance to help someone out
+                    </div>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="card-image">
+                    <figure class="image is-2by2">
+                        <img src="static/img/038-joy.png" alt="">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        The chance to help someone out
+                    </div>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="card-image">
+                    <figure class="image is-2by2">
+                        <img src="static/img/locked.png" alt="">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        Shopper's money is held in escrow to ensure commitment on both sides.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-center">
+            <a href="#" class="button is-large is-rounded is-white">Sign Up</a>
+        </div>
+    </div>
+</section>
+<!--Example Products-->
+<section class="w3-light-grey" id="items">
+    <div class="container w3-container w3-padding-32">
+        <h1 class="w3-center w3-padding-16">What kind of items do our Shoppers request?</h1>
+        <div class="columns is-multiline">
+            <div class="column is-4 w3-center">
+                <div class="card-image">
+                    <figure class="image ">
+                        <img src="static/img/41oU-Ui-NgL._AC_US218_.jpg" alt="" class="w3-circle">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content w3-text-blue">
+                        <a href="https://www.amazon.com/">amazon.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4 w3-center">
+                <div class="card-image">
+                    <figure class="image ">
+                        <img src="static/img/earphone.png" alt="">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content w3-text-blue"><a href="https://www.ebay.com/">ebay.com</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4 w3-center">
+                <div class="card-image">
+                    <figure class="image ">
+                        <img src="static/img/dress.png" alt="">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content w3-text-blue">
+                        <a href="https://www.amazon.com/">amazon.com</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4 w3-center">
+                <div class="card-image">
+                    <figure class="image ">
+                        <img src="static/img/makeup.png" alt="">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content w3-text-blue">
+                       <a href="http://www.boots.com">boots.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4 w3-center">
+                <div class="card-image">
+                    <figure class="image ">
+                        <img src="static/img/sdcard.png" alt="">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content w3-text-blue" ><a href="https://www.newegg.com/">newegg.com</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4 w3-center">
+                <div class="card-image">
+                    <figure class="image ">
+                        <img src="static/img/wig.png" alt="">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content w3-text-blue"><a href="https://www.walmart.com/">
+                       walmart.com
+                    </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="w3-content">
+    <br>
+    <h1 class="subtitle w3-text-blue w3-center">We're building a community. Join something special.</h1>
+    <br>
+    <h1 class="title w3-text-blue w3-center" id="CONTACT">CONTACT US</h1>
+    <br>
+    <div class="columns">
+        <div class="column is-6 is-offset-3">
+            <form action="/contact" method="post">
+                <div class="field w3-padding">
+                    <label class="label w3-text-blue-grey"> Your name</label>
+                    <p class="control has-icons-left has-icons-right">
+                        <input class="input" type="text" name="name" placeholder="e.g Kwaku Obinna">
+                        <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                    </p>
+                </div>
+                <div class="field w3-padding">
+                    <label class="label w3-text-blue-grey"> Email address</label>
+                    <p class="control has-icons-left has-icons-right">
+                        <input class="input" type="email" name="email" placeholder="kwakuo@gmail.com">
+                        <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                    </p>
+                </div>
+                <div class="field w3-padding">
+                    <label class="label w3-text-blue-grey"> Your number</label>
+                    <p class="control has-icons-left has-icons-right">
+                        <input class="input" type="text" name="phone_num" placeholder="e.g +233 6899...">
+                        <span class="icon is-small is-left">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                        <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                    </p>
+                </div>
+                <div class="field w3-padding-24">
+                    <label class="label w3-text-blue-grey">Ask Question?</label>
+                    <p class="control has-icons-left has-icon-right">
+                        <input class="textarea" type="text" name="question" placeholder="ask any question">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field is-grouped is-grouped-right w3-padding">
+                    <p class="control">
+                        <button class="button is-large w3-blue-grey" type="submit">
+                            Submit
+                        </button>
+                    </p>
+                </div>
+            </form>
+{#            <div class="content w3-center w3-text-blue w3-padding">#}
+{#                <a class="w3-xxlarge" href="#"><i class="fab fa-instagram"></i></a>#}
+{#                <a class="w3-xxlarge" href="#"><i class="fab fa-facebook"></i></a>#}
+{#                <a class="w3-xxlarge" href="#"><i class="far fa-envelope"></i></a>#}
+{#            </div>#}
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="w3-center w3-padding-16">
+                <span class=" w3-text-blue ">Copyright &copy; GIGTRAVEL 2018</span>
+            </div>
+            {#            <div class="col-md-4">#}
+            {#                <ul class="list-inline social-buttons">#}
+            {#                    <li class="list-inline-item">#}
+            {#                        <a href="#">#}
+            {#                            <i class="fa fa-twitter"></i>#}
+            {#                        </a>#}
+            {#                    </li>#}
+            {#                    <li class="list-inline-item">#}
+            {#                        <a href="#">#}
+            {#                            <i class="fa fa-facebook"></i>#}
+            {#                        </a>#}
+            {#                    </li>#}
+            {#                    <li class="list-inline-item">#}
+            {#                        <a href="#">#}
+            {#                            <i class="fa fa-linkedin"></i>#}
+            {#                        </a>#}
+            {#                    </li>#}
+            {#                </ul>#}
+            {#            </div>#}
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
