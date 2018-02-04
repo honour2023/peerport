@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <title>PeerPort</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="static/css/bulma.css">
+        <link rel="stylesheet" href="static/css/w3.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/styles.css">
+    </head>
+</head>
+<body>
+
+<nav class="w3-padding-large navbar w3-top">
+    <div class="navbar-brand">
+        <a class="navbar-item raleway w3-xlarge" href="#">
+            PeerPort
+        </a>
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="#">
+            </a>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control ">
+                        <a class="button w3-bottombar w3-border-0 w3-text-blue" href="#Signup">
+                            <span>Sign Up</span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button w3-border-0 w3-text-blue" href="#CONTACT">
+                            <span>Contact</span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button w3-border-0 w3-text-blue" href="#">
+                            <span>About</span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button is-info w3-border-0 w3-text-black" href="#items">
+                            <span>See Items</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<br>
+<br>
+<div class="has-text-centered">
+    {% for message in get_flashed_messages() %}
+    <div class="notification is-info w3-padding-32 ">
+            <h5 class="w3-xlarge ">{{ message }}</h5>
+        </div>
+    {% endfor %}
+</div>
+{% block content%}
+{% endblock %}
+</body>
+</html>
