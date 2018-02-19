@@ -63,6 +63,9 @@ def contact():
         question = request.form.get('question')
 
         new_contact = Contact.create(name=name, email=email, phone_num=phone_num, question=question)
+        if new_contact:
+            flash('Thank you for reaching out. We will contact you shortly.')
+            return redirect(url_for('index'))
 
     return render_template('index.html')
 
